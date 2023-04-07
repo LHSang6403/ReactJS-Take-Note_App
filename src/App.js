@@ -33,8 +33,6 @@ function App() {
 }
 
 // Them cac tinh nang:
-// Luu note vao localStorage
-// GG Sheet database
-// Doi mau icon navbar
+// Luu content vao GG Sheet database
 
 export default App;
