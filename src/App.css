@@ -54,6 +54,17 @@ body {
   color:#5d0cff;
 }
 
+.info-title {
+  font-size: 40px;
+  margin: 24px;
+  transition: all 0.4s ease-in-out;
+}
+
+.info-title:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -87,15 +98,15 @@ ul {
   border-radius: 10px;
   text-transform: capitalize;
   font-weight: bold;
-  margin: 2px;
+  margin: 6px;
+  transition: all 0.4s ease-in-out;
 }
 
 .nav-icon:hover {
   background: #ffa500;
   color: whitesmoke;
-  /*
-  width: 130%;
-  */
+  transform: scale(1.1);
+  opacity: 0.9;
 }
 
 .todo-app {
@@ -166,7 +177,15 @@ h2 {
   );
   color: #fff;
   text-transform: capitalize;
-  margin: 2px;
+  margin: 6px;
+  transition: all 0.4s ease-in-out;
+}
+
+.todo-button:hover {
+  background: #ffa500;
+  color: whitesmoke;
+  transform: scale(1.1);
+  opacity: 0.9;
 }
 
 .todo-input.edit {
@@ -203,6 +222,14 @@ h2 {
   padding: 16px;
   border-radius: 10px;
   width: 90%;
+  transition: all 0.4s ease-in-out;
+}
+
+.todo-row:hover {
+  background: #ffa500;
+  color: whitesmoke;
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
 .todo-row:nth-child(4n + 1) {

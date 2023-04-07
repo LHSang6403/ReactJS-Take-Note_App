@@ -1,10 +1,13 @@
 import TodoList from './TodoList';
+import AnimatePage from './AnimatedPage';
 
 function Note(){
     return (
-        <div className='todo-app shadow' >
-            <TodoList />
-        </div>
+        <AnimatePage>
+            <div className='todo-app shadow' >
+                <TodoList />
+            </div>
+        </AnimatePage>
     )
 }
 

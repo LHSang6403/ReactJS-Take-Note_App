@@ -1,11 +1,15 @@
 import './App.css';
-import {Routes, Route, Link} from 'react-router-dom';
+import {Routes, Route, Link, useLocation} from 'react-router-dom';
 import Note from './components/Note';
 import Info from './components/Info';
+import {AnimatePresence} from 'framer-motion';
 
 function App() {
-  return ( 
-    <div className = 'app'>
+  const location = useLocation();
+
+  return (
+    <container>
+      
       <nav className="header shadow">
         <ul>
           <li className="nav-list">
@@ -16,12 +20,16 @@ function App() {
           </li>
         </ul>
       </nav>
-      <Routes>
-        <Route path="/info" element={<Info/>} ></Route>
-        <Route path="/note" element={<Note/>} ></Route>
-      </Routes>
-    </div>
-  );
+
+      <AnimatePresence mode='wait' >
+        <Routes key = {location.pathname} location = {location}>
+          <Route path="/info" element={<Info/>} ></Route>
+          <Route path="/note" element={<Note/>} ></Route>
+        </Routes>
+      </AnimatePresence>
+
+    </container>
+  )
 }
 
 // Them cac tinh nang:
